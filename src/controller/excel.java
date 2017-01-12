@@ -1,7 +1,9 @@
 package controller;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.HashMap;
 
 import jxl.Sheet;
@@ -63,6 +65,12 @@ public class excel {
 			regioes.put(stRegiao.toLowerCase(), regiao);
 
 		}
+		FileWriter arq = new FileWriter("saida.js");
+		PrintWriter gravarArq = new PrintWriter(arq);
+		for (Regiao regiao : regioes.values()) {
+
+		}
+
 		workbook.close();
 		regioes.values();
 	}

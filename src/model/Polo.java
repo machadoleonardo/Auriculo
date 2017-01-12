@@ -3,53 +3,56 @@ package model;
 import java.util.HashMap;
 
 public class Polo {
-	public Polo(String polo, HashMap<String, Cidade> cidadesIncritos, HashMap<String, Cidade> cidadesConcluiram) {
+	public Polo(String polo, HashMap<String, Cidade> cidades) {
 		super();
 		this.polo = polo;
-		this.cidadesIncritos = cidadesIncritos;
-		this.cidadesConcluiram = cidadesConcluiram;
+		this.cidades = cidades;
+
 	}
+
 	private String polo;
 	private int totalInscritos;
 	private int totalConcluiram;
-	private HashMap<String,Cidade> cidadesIncritos;
-	private HashMap<String,Cidade> cidadesConcluiram;
+	private HashMap<String, Cidade> cidades;
 
 	public String getPolo() {
 		return this.polo;
 	}
+
 	public int getTotalInscritos() {
 		return this.totalInscritos;
 	}
+
 	public int getTotalConcluiram() {
 		return this.totalConcluiram;
 	}
-	public HashMap<String, Cidade> getCidadesIncritos() {
-		return this.cidadesIncritos;
+
+	public HashMap<String, Cidade> getCidades() {
+		return this.cidades;
 	}
-	public HashMap<String, Cidade> getCidadesConcluiram() {
-		return this.cidadesConcluiram;
-	}
+
 	public void setPolo(String polo) {
 		this.polo = polo;
 	}
+
 	public void setTotalInscritos(int totalInscritos) {
 		this.totalInscritos = totalInscritos;
 	}
+
 	public void setTotalConcluiram(int totalConcluiram) {
 		this.totalConcluiram = totalConcluiram;
 	}
-	public void setCidadesIncritos(HashMap<String, Cidade> cidadesIncritos) {
-		this.cidadesIncritos = cidadesIncritos;
+
+	public void setCidades(HashMap<String, Cidade> cidades) {
+		this.cidades = cidades;
 	}
-	public void setCidadesConcluiram(HashMap<String, Cidade> cidadesConcluiram) {
-		this.cidadesConcluiram = cidadesConcluiram;
-	}
+
 	public void incrementaTotalInscritos() {
-		this.totalInscritos ++;
+		this.totalInscritos++;
 	}
+
 	public void incrementaTotalConcluiram() {
-		this.totalConcluiram ++;
+		this.totalConcluiram++;
 	}
 
 }

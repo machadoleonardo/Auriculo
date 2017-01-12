@@ -1,2 +1,0 @@
-Auriculo
-"# Auriculo" 
